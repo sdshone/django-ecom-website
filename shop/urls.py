@@ -21,4 +21,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('<int:id>/', views.detail, name='detail')
 ] #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
