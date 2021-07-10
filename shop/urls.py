@@ -21,5 +21,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('<int:id>/', views.detail, name='detail')
+    path('<int:id>/', views.detail, name='detail'),
+    path('checkout/', views.checkout, name='checkout')
 ] #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
